@@ -12,7 +12,7 @@ A WebExtension that adds a CYBER banner to every website that contains the word 
 
 ### Known Bugs
 - Breaks Twitter if toggled on (can be fixed by switching it off)
-- Always triggers on Amazon because they habe "cyber-monday" in their JS
+- Always triggers on Amazon because they have "cyber-monday" in their JS
 - Breaks file previews on GitLab
 
 <sup>cyber_plain.png and banner CSS shamelessly ripped from <https://cyber.equipment></sup>
