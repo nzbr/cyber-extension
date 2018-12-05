@@ -1,0 +1,43 @@
+{
+    "manifest_version": 2,
+    "name": "CYBER Extension",
+    "version": "1.1",
+
+    "applications": {
+        "gecko": {
+            "id": "cyber@nzbr.de",
+            "strict_min_version": "42.0"
+        }
+    },
+
+    "description": "Adds a CYBER banner to all websites containing the word 'cyber'",
+
+    "icons": {
+        "48": "icon.png"
+    },
+
+    "content_scripts": [{
+        "matches": ["*://*/*"],
+        "js": ["cyber.js"]
+    }],
+
+    "browser_action": {
+        "default_icon": {
+            "19": "icon-19.png",
+            "38": "icon-38.png"
+        },
+        "default_title": "CYBER"
+    },
+
+    "permissions": [
+        "storage"
+    ],
+
+    "background": {
+        "scripts": ["background.js"]
+    },
+
+    "web_accessible_resources": [
+        "cyber_plain.png"
+    ]
+}
