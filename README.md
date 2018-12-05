@@ -9,6 +9,9 @@ A WebExtension that adds a CYBER banner to every website that contains the word 
 ### Planned Features
 - CYBER counter
 - Blacklist websites
+- Adding own Buzzwords
+    - Own images for own Buzzwords (maybe)
+- Faster banner with more CYBER
 
 ### Known Bugs
 - Breaks Twitter if toggled on (can be fixed by switching it off)
