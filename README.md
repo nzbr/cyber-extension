@@ -15,4 +15,8 @@ A WebExtension that adds a CYBER banner to every website that contains the word 
 - Always triggers on Amazon because they have "cyber-monday" in their JS
 - Breaks file previews on GitLab
 
+### [Download](https://dl.nzbr.de/addons/cyber/)
+- Firefox: cyber_extension-<version>-fx.xpi
+- Chrome: not yet supported
+
 <sup>cyber_plain.png and banner CSS shamelessly ripped from <https://cyber.equipment></sup>
