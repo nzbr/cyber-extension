@@ -9,6 +9,9 @@ A WebExtension that adds a CYBER banner to every website that contains the word 
 ### Planned Features
 - CYBER counter
 - Blacklist websites
+- Adding own Buzzwords
+    - Own images for own Buzzwords (maybe)
+- Faster banner with more CYBER
 
 ### Known Bugs
 - Breaks Twitter if toggled on (can be fixed by switching it off)
@@ -16,7 +19,7 @@ A WebExtension that adds a CYBER banner to every website that contains the word 
 - Breaks file previews on GitLab
 
 ### [Download](https://dl.nzbr.de/addons/cyber/)
-- Firefox: cyber_extension-<version>-fx.xpi
+- Firefox: cyber_extension-[version]-fx.xpi
 - Chrome: not yet supported
 
 <sup>cyber_plain.png and banner CSS shamelessly ripped from <https://cyber.equipment></sup>
