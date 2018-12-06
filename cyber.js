@@ -1,10 +1,10 @@
-browser.storage.sync.get("enabled").then(function(v) {
+chrome.storage.sync.get(["enabled"], function(v) {
 
     if (v.enabled) {
         if (document.documentElement.innerHTML.search(/cyber/i) > -1) {
             console.log("CYBER triggered on: " + document.location.href);
 
-            var cyberImage = browser.runtime.getURL("cyber_plain.png");
+            var cyberImage = chrome.runtime.getURL("cyber_plain.png");
 
             var headInsert = `<style>
                   .cyber-header {

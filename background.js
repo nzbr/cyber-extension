@@ -1,6 +1,6 @@
-browser.storage.sync.get("init").then(function(v) {
+chrome.storage.sync.get(["init"], function(v) {
     if (!v.init) {
-        browser.storage.sync.set({
+        chrome.storage.sync.set({
             "enabled": true,
             "init": true
         });
@@ -12,13 +12,13 @@ browser.storage.sync.get("init").then(function(v) {
 setImage();
 
 function setImage() {
-    browser.storage.sync.get("enabled").then(function(v) {
+    chrome.storage.sync.get(["enabled"], function(v) {
         if (v.enabled) {
-            browser.browserAction.setIcon({
+            chrome.browserAction.setIcon({
                 path: "icon-38.png"
             });
         } else {
-            browser.browserAction.setIcon({
+            chrome.browserAction.setIcon({
                 path: "icon-off-38.png"
             });
         };
@@ -26,16 +26,16 @@ function setImage() {
 }
 
 //Update button image automatically
-browser.storage.onChanged.addListener(function(a,b) {
+chrome.storage.onChanged.addListener(function(a,b) {
     setImage();
 });
 
-browser.browserAction.onClicked.addListener(function(tab) {
-    browser.storage.sync.get("enabled").then(function(v) {
-        browser.storage.sync.set({
+chrome.browserAction.onClicked.addListener(function(tab) {
+    chrome.storage.sync.get(["enabled"], function(v) {
+        chrome.storage.sync.set({
             "enabled": (!v.enabled)
         });
         console.log("CYBER enabled: " + (!v.enabled));
-        browser.tabs.reload();
+        chrome.tabs.reload();
     });
 });
