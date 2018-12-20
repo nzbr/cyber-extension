@@ -20,6 +20,6 @@ A WebExtension that adds a CYBER banner to every website that contains the word 
 
 ### [Download](https://dl.nzbr.de/addons/cyber/)
 - Firefox: cyber_extension-[version]-fx.xpi
-- Chrome: not yet supported
+- Chrome: This repsitory can be loaded as an [unpacked extension](https://developer.chrome.com/extensions/getstarted)
 
 <sup>cyber_plain.png and banner CSS shamelessly ripped from <https://cyber.equipment></sup>
