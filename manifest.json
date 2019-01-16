@@ -1,7 +1,7 @@
 {
     "manifest_version": 2,
     "name": "CYBER Extension",
-    "version": "1.1",
+    "version": "git",
 
     "applications": {
         "gecko": {
