@@ -20,7 +20,7 @@ chrome.storage.sync.get(["enabled"], function(v) {
                       position: fixed;
                       width: 100%;
                       margin-top: 10px;
-                      z-index: 255;
+                      z-index: 2147483647;
                   }
 
                   @-webkit-keyframes backgroundScroll {
